@@ -2,11 +2,9 @@ anchor_gen::generate_cpi_crate!("idl.json");
 
 anchor_lang::declare_id!("JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4");
 
-use rand::{
-    distributions::{Distribution, Uniform},
-    seq::IteratorRandom,
-};
-use solana_program::pubkey;
+use anchor_lang::{prelude::Pubkey, pubkey};
+use rand::distributions::{Distribution, Uniform};
+use rand::prelude::IteratorRandom;
 
 // Now, we only support up to 8 authorities between [0, 1, 2, 3, 4, 5, 6, 7]. To create more authorities, we need to
 // add them in the monorepo. We can use from 0 up to 255 in order to prevent hot accounts.
