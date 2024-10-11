@@ -2,7 +2,8 @@ anchor_gen::generate_cpi_crate!("idl.json");
 
 anchor_lang::declare_id!("JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4");
 
-use anchor_lang::{prelude::Pubkey, pubkey};
+use anchor_lang::prelude::Pubkey;
+use anchor_lang::solana_program::pubkey;
 use rand::distributions::{Distribution, Uniform};
 use rand::prelude::IteratorRandom;
 
